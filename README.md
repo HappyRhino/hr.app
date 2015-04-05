@@ -11,3 +11,23 @@ $ npm install hr.app
 
 ### Documentation
 
+```js
+var Application = require("hr.app");
+
+var MyApp = Application.extend({
+    name: "My Awesome App",
+
+    router: {
+        "user/:username": "showUser"
+    },
+
+    showUser: function(username) {
+
+    }
+});
+
+
+var app = new MyApp();
+app.router.start()
+```
+
