@@ -1,0 +1,21 @@
+{
+    "name": "hr.app",
+    "description": "Application manager for HappyRhino",
+    "version": "0.0.0",
+    "peerDependencies": {
+        "hr.utils": "*",
+        "hr.class": "*",
+        "hr.view": "*",
+        "hr.history": "*"
+    },
+    "devDependencies": {
+        "hr.mocha": "0.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HappyRhino/hr.app.git"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/hr-mocha ./tests/index.js"
+    }
+}
