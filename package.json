@@ -1,17 +1,10 @@
 {
     "name": "hr.app",
     "description": "Application manager for HappyRhino",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "main": "./lib/index.js",
-    "peerDependencies": {
-        "jquery": "*",
-        "hr.utils": "*",
-        "hr.class": "*",
-        "hr.view": "*",
-        "hr.history": "*"
-    },
     "devDependencies": {
-        "hr.mocha": "0.2.0"
+        "hr.mocha": "^0.2.0"
     },
     "repository": {
         "type": "git",
@@ -19,5 +12,12 @@
     },
     "scripts": {
         "test": "./node_modules/.bin/hr-mocha ./tests/index.js"
+    },
+    "dependencies": {
+        "jquery": "*",
+        "hr.utils": "*",
+        "hr.class": "*",
+        "hr.view": "*",
+        "hr.history": "*"
     }
 }
